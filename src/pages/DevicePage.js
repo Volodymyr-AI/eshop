@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {Button, Card, Col, Container, Image, Row} from "react-bootstrap";
-import bigStar from '../assets/bigStar.png'
 import {useParams} from 'react-router-dom'
 
 
@@ -22,7 +21,7 @@ const DevicePage = () => {
                         <h2>{device.name}</h2>
                         <div
                             className="d-flex align-items-center justify-content-center"
-                            style={{background: `url(${bigStar}) no-repeat center center`, width:240, height: 240, backgroundSize: 'cover', fontSize:64}}
+                            // style={{background: `url(${bigStar}) no-repeat center center`, width:240, height: 240, backgroundSize: 'cover', fontSize:64}}
                         >
                             {device.rating}
                         </div>

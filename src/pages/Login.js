@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import {NavLink, useLocation, useNavigate} from "react-router-dom";
 import {observer} from "mobx-react-lite";
 import {Context} from "../index";
+import {LOGIN_ROUTE, REGISTRATION_ROUTE, SHOP_ROUTE} from '../utils/consts.js';
 
 const Login = observer(() => {
     const {user} = useContext(Context)
@@ -19,9 +20,9 @@ const Login = observer(() => {
         try {
             let data;
             if (isLogin) {
-                data = await login(email, password);
+                // data = await login(email, password);
             } else {
-                data = await registration(email, password);
+                // data = await registration(email, password);
             }
             user.setUser(user)
             user.setIsLogin(true)
